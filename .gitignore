@@ -1,0 +1,10 @@
+# Basics for the packaging
+*.n64
+*.v64
+*.z64
+/pkg
+/src
+*.pkg.tar*
+*.7z
+/n64-render96-git
+/textures-git

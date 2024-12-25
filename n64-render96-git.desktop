@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Super Mario 64 (Render96 git)
+Exec=/opt/n64/render96-git/sm64
+Terminal=false
+Icon=n64-render96-git
+Type=Application
+Categories=Game;
+StartupWMClass=Render96
