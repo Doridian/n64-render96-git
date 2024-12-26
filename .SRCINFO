@@ -1,0 +1,30 @@
+pkgbase = n64-render96-git
+	pkgdesc = Recompilation of Super Mario 64 for modern systems
+	pkgver = r769.cd02b888
+	pkgrel = 1
+	url = https://github.com/Render96/Render96ex
+	arch = any
+	license = Commercial
+	makedepends = git
+	makedepends = lsb-release
+	makedepends = audiofile
+	makedepends = 7zip
+	makedepends = unzip
+	depends = sdl2
+	depends = glew
+	options = !strip
+	options = !debug
+	source = n64-render96-git::git+https://github.com/Render96/Render96ex#branch=alpha
+	source = models.7z::https://github.com/Render96/ModelPack/releases/download/3.2/Render96_DynOs_v3.2.7z
+	source = textures-git::git+https://github.com/pokeheadroom/RENDER96-HD-TEXTURE-PACK.git
+	source = baserom.us.z64
+	source = n64-render96-git.desktop
+	source = logo.png
+	sha256sums = SKIP
+	sha256sums = d95ef25a694b1cd2e82785418aebf2aa8fd3a6b394b350fe51971474d19664b2
+	sha256sums = SKIP
+	sha256sums = 17ce077343c6133f8c9f2d6d6d9a4ab62c8cd2aa57c40aea1f490b4c8bb21d91
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = n64-render96-git
