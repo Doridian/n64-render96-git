@@ -16,14 +16,12 @@ source=(
     "textures-git::git+https://github.com/pokeheadroom/RENDER96-HD-TEXTURE-PACK.git"
     'baserom.us.z64' # Copyrighted, you have to find this yourself, make sure to check on https://2ship.equipment/
     'n64-render96-git.desktop'
-    'logo.png'
 )
 sha256sums=(
     'SKIP'
     'd95ef25a694b1cd2e82785418aebf2aa8fd3a6b394b350fe51971474d19664b2'
     'SKIP'
     '17ce077343c6133f8c9f2d6d6d9a4ab62c8cd2aa57c40aea1f490b4c8bb21d91'
-    'SKIP'
     'SKIP'
 )
 
@@ -44,7 +42,7 @@ build() {
 package() {
   cd "${srcdir}/${pkgname}"
 
-  install -Dm644 ../logo.png "${pkgdir}/usr/share/pixmaps/n64-render96-git.png"
+  install -Dm644 build/us_pc/res/gfx/textures/segment2/mario_normal.rgba32.png "${pkgdir}/usr/share/pixmaps/n64-render96-git.png"
   install -Dm644 ../n64-render96-git.desktop "${pkgdir}/usr/share/applications/n64-render96-git.desktop"
 
   install -Dm755 build/us_pc/sm64.us.f3dex2e "${pkgdir}/opt/n64/render96-git/sm64"
