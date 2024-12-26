@@ -6,4 +6,4 @@ Terminal=false
 Icon=n64-render96-git
 Type=Application
 Categories=Game;
-StartupWMClass=Render96
+StartupWMClass=sm64
